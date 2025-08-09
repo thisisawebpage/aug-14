@@ -227,20 +227,20 @@
     </div>   
 
       <div id="q8" class="container">
-        <h1> you made it this far! i will decide your fate now </h1>
-        <button class="btn yes" onclick="nextQuestion('q8', 'q9')">i'll keep going...</button>
+        <h1> zombie apocalypse hits. do you save him or yourself? </h1>
+        <button class="btn yes" onclick="nextQuestion('q8', 'q9')">we are having a zombie love affair</button>
         <button class="btn no" onmouseover="moveButton(this)">i'm done bye</button>
     </div>   
 
     <div id="q9" class="container">
-        <h1> are you 100% sure of this? there is no turning back </h1>
-        <button class="btn no" onmouseover="moveButton(this)">i'm out dummy!!</button>
-        <button class="btn yes" onclick="nextQuestion('q9', 'q10')">well i'm here aren't i</button>
+        <h1> are you 100% sure of this relationship? there is no turning back. it's literally forever </h1>
+        <button class="btn no" onmouseover="moveButton(this)">i don't think i'm ready for that kind of thing</button>
+        <button class="btn yes" onclick="nextQuestion('q9', 'q10')">there's no path but the one in front of me</button>
     </div> 
     
     <div id="q10" class="container">
         <h1>...marry me? </h1>
-        <button class="btn yes" onclick="showModal()">you can call me fiancée</button>
+        <button class="btn yes" onclick="showModal()">oui cause im bilingual</button>
         <button class="btn yes" onclick="showModal()">yes!!!!!!</button>
 
     </div>
@@ -249,7 +249,7 @@
     
  <div id="modal" class="modal">
         <div class="modal-content">
-            <h2>hey fiancée happy six months together <3 i love you </h2>
+            <h2> hey baby happy six months together <3 we are getting married. i love you </h2>
             <img src="https://github.com/cultparagon/cultparagon.github.io/blob/main/Cats%20Hug%20GIF%20by%20ruillu.gif?raw=true" alt="Cute GIF" class="modal-gif">
             <button class="button" onclick="closeModal()">Close</button>
         </div>
