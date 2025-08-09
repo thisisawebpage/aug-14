@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>...</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <audio id="soundCorrect" src="https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3" preload="auto"></audio>
+    <audio id="soundError" src="https://assets.mixkit.co/active_storage/sfx/946/946-preview.mp3" preload="auto"></audio>
     <style>
+  
         body {
             font-family: 'Trebuchet MS', sans-serif;
             text-align: center;
@@ -266,16 +269,19 @@
 
             document.getElementById('q1').classList.add('visible'); // Muestra la primera pregunta
         }
+     
         
         function nextQuestion(current, next) {
             document.getElementById(current).classList.remove('visible');
             document.getElementById(next).classList.add('visible');
+            document.getElementById("soundCorrect").play(); 
         }
         
         function moveButton(btn) {
             btn.style.position = 'absolute';
             btn.style.top = Math.random() * window.innerHeight + 'px';
             btn.style.left = Math.random() * window.innerWidth + 'px';
+            document.getElementById("soundError").play();
         }
        
         function showModal() {
