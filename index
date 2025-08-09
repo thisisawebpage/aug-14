@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>...</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         body {
             font-family: 'Trebuchet MS', sans-serif;
@@ -276,8 +277,10 @@
             btn.style.top = Math.random() * window.innerHeight + 'px';
             btn.style.left = Math.random() * window.innerWidth + 'px';
         }
+       
         function showModal() {
         document.getElementById("modal").style.display = "block";
+        confetti({ particleCount: 200, spread: 70, origin: { y: 0.6 } }); // ¡Confeti!
         }
 
         function closeModal() {
